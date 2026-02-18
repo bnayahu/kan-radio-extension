@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kan Radio Player</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📻 רדיו כאן</h1>
+    </div>
+
+    <div class="player-controls">
+      <div id="current-station" class="current-station">בחר תחנה</div>
+      <div class="controls">
+        <button id="play-btn" class="control-btn play-btn" disabled>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </button>
+        <button id="stop-btn" class="control-btn stop-btn" disabled>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="6" y="6" width="12" height="12"/>
+          </svg>
+        </button>
+      </div>
+      <input type="range" id="volume" class="volume-slider" min="0" max="100" value="70">
+    </div>
+
+    <div class="stations">
+      <button class="station-btn" data-url="https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_reshet_bet/live.livx/playlist.m3u8?renditions" data-name="כאן בית - 95.5FM">
+        <span class="station-freq">95.5</span>
+        <span class="station-name">כאן בית</span>
+      </button>
+
+      <button class="station-btn" data-url="https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_gimmel/live.livx/playlist.m3u8?renditions" data-name="כאן גימל - 97.8FM">
+        <span class="station-freq">97.8</span>
+        <span class="station-name">כאן גימל</span>
+      </button>
+
+      <button class="station-btn" data-url="https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_88/live.livx/playlist.m3u8?renditions" data-name="כאן 88FM">
+        <span class="station-freq">88.0</span>
+        <span class="station-name">כאן 88</span>
+      </button>
+
+      <button class="station-btn" data-url="https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_moreshet/live.livx/playlist.m3u8?renditions" data-name="כאן מורשת - 98.8FM">
+        <span class="station-freq">98.8</span>
+        <span class="station-name">כאן מורשת</span>
+      </button>
+
+      <button class="station-btn" data-url="https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_kol_hamusica/live.livx/playlist.m3u8?renditions" data-name="כאן קול המוזיקה - 95FM">
+        <span class="station-freq">95.0</span>
+        <span class="station-name">כאן קול המוזיקה</span>
+      </button>
+
+      <button class="station-btn" data-url="https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/makan/live.livx/playlist.m3u8?renditions" data-name="מכאן - 102FM">
+        <span class="station-freq">102</span>
+        <span class="station-name">מכאן</span>
+      </button>
+
+      <button class="station-btn" data-url="https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_tarbut/live.livx/playlist.m3u8?renditions" data-name="כאן תרבות - 100.4FM">
+        <span class="station-freq">100.4</span>
+        <span class="station-name">כאן תרבות</span>
+      </button>
+
+      <button class="station-btn" data-url="https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/radio/kan_reka/live.livx/playlist.m3u8?renditions" data-name="כאן רקע - 104.5FM">
+        <span class="station-freq">104.5</span>
+        <span class="station-name">כאן רקע</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

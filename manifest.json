@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Kan Radio Player",
+  "version": "1.0.0",
+  "description": "Listen to Israeli Kan radio channels",
+  "permissions": [
+    "offscreen",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://kancdn.medonecdn.net/*",
+    "https://*.cdn-redge.media/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/radio_16.png",
+      "48": "icons/radio_48.png",
+      "128": "icons/radio_128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/radio_16.png",
+    "48": "icons/radio_48.png",
+    "128": "icons/radio_128.png"
+  }
+}
